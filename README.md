@@ -15,8 +15,8 @@ The original model was trained only on clean lab photos (PlantVillage). It score
 
 | Held-out test | Original model | Field-tuned model |
 | --- | --- | --- |
-| 236 real field photos, right class | 27.1% | **55.5%** |
-| Same photos, right crop | 47.0% | **75.0%** |
+| 236 real field photos, right class | 27.1% | **75.5%** |
+| Same photos, right crop | 47.0% | **85.0%** |
 | 380 clean lab photos | 93.2% | 90.0% |
 | 19 non-leaf photos shown as a confident result | 0% | 0% (too few to prove much) |
 
