@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # KrishiSaathi: field-tested crop screening and a fertiliser planner
 
 Two practical tools for farmers, built to be honest about what they can and cannot tell you.
@@ -134,3 +135,7 @@ One backend test loads the real model and is skipped when TensorFlow is not inst
 - No authentication: history is shared by everyone who can reach the API, so deploy only on a trusted network.
 - Databases created by earlier versions keep their old `government_schemes` and `fertilizer_recommendations` tables untouched; the app no longer reads them.
 - The earlier Government Schemes module was removed on request.
+=======
+# KrishiSaathi
+AI-powered farming assistant for agricultural information and crop-related guidance.
+>>>>>>> 7090b8d519e227d0aec7d4fd9580aadd9dc3e32c
