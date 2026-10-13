@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # KrishiSaathi: field-tested crop screening and a fertiliser planner
 
 Two practical tools for farmers, built to be honest about what they can and cannot tell you.
