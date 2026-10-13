@@ -1,0 +1,79 @@
+{
+  "version": "2026-10-10",
+  "units": {
+    "hectare_per_acre": 0.404686,
+    "gunthas_per_acre": 40,
+    "note": "1 acre = 0.404686 hectare; 1 guntha = 1/40 acre (about 101.2 square metres)."
+  },
+  "products": {
+    "urea": {"name": "Urea", "N": 46, "P2O5": 0, "K2O": 0},
+    "dap": {"name": "DAP (di-ammonium phosphate)", "N": 18, "P2O5": 46, "K2O": 0},
+    "ssp": {"name": "SSP (single super phosphate)", "N": 0, "P2O5": 16, "K2O": 0},
+    "mop": {"name": "MOP (muriate of potash)", "N": 0, "P2O5": 0, "K2O": 60},
+    "sop": {"name": "SOP (sulphate of potash)", "N": 0, "P2O5": 0, "K2O": 50}
+  },
+  "products_note": "Percent nutrient content is the usual grade of each fertiliser (DAP 18-46-0). Bags can differ: always use the grade printed on your bag. FAO's nutrient management guidelines also state that 100 kg of DAP supplies 18 kg of N.",
+  "rating_limits": {
+    "name": "Soil Health Card style ratings (kg/ha)",
+    "N": {"low_below": 280, "high_above": 560, "method": "available nitrogen"},
+    "P": {"low_below": 10, "high_above": 25, "method": "available phosphorus (Olsen)"},
+    "K": {"low_below": 120, "high_above": 280, "method": "available potassium"},
+    "source_title": "Soil Health Card data definitions (Telangana and Meghalaya state datasets compiled from the national portal)",
+    "source_url": "https://dataful.in/datasets/24087/",
+    "caveat": "Limits differ between states, laboratories and extraction methods. TNAU's chart, for example, uses N 240/480, P 11/22 and K 110/280. When your card prints its own Low/Medium/High rating, use that instead of a computed one."
+  },
+  "references": [
+    {
+      "id": "cotton-irrigated-mh",
+      "crop": "Cotton, irrigated",
+      "region": "Maharashtra",
+      "N": 100, "P2O5": 50, "K2O": 50,
+      "suggested_n_splits": 3,
+      "notes": "The state package says irrigated cotton is given nitrogen in three splits, the first one-third at sowing and the second one-third about a month later; read the source for the timing of the last split. Apply FYM or compost (12 to 15 t/ha) at least once in three years and fertiliser as per the soil test report.",
+      "verification": "verified",
+      "source_title": "Approved Package of Practices for Cotton: Maharashtra State",
+      "source_url": "https://static.vikaspedia.in/media/files_en/agriculture/crop-production/package-of-practices/practices-for-maharastra.pdf"
+    },
+    {
+      "id": "cotton-rainfed-hybrid-mh",
+      "crop": "Cotton, rainfed hybrids",
+      "region": "Maharashtra",
+      "N": 80, "P2O5": 40, "K2O": 40,
+      "suggested_n_splits": 2,
+      "notes": "Dose for rainfed cotton hybrids from the same state package. The number of nitrogen splits shown here is a common default, not taken from the source.",
+      "verification": "verified",
+      "source_title": "Approved Package of Practices for Cotton: Maharashtra State",
+      "source_url": "https://static.vikaspedia.in/media/files_en/agriculture/crop-production/package-of-practices/practices-for-maharastra.pdf"
+    },
+    {
+      "id": "cotton-desi-hirsutum-mh",
+      "crop": "Cotton, desi and hirsutum varieties (not hybrids)",
+      "region": "Maharashtra",
+      "N": 50, "P2O5": 25, "K2O": 25,
+      "suggested_n_splits": 2,
+      "notes": "Dose for non-hybrid desi and hirsutum varieties from the same state package. The number of nitrogen splits shown here is a common default, not taken from the source.",
+      "verification": "verified",
+      "source_title": "Approved Package of Practices for Cotton: Maharashtra State",
+      "source_url": "https://static.vikaspedia.in/media/files_en/agriculture/crop-production/package-of-practices/practices-for-maharastra.pdf"
+    },
+    {
+      "id": "wheat-irrigated-mpkv",
+      "crop": "Wheat, irrigated",
+      "region": "Maharashtra",
+      "N": 120, "P2O5": 60, "K2O": 40,
+      "suggested_n_splits": 2,
+      "notes": "Appears as the basal-dose recommendation (with 5 t/ha FYM) in MPKV Rahuri's 2019-20 wheat recommendations. The text could only be read in part, so confirm the dose for your variety and sowing date with your Krishi Vigyan Kendra. The number of nitrogen splits shown here is a common default.",
+      "verification": "partly_verified",
+      "source_title": "Mahatma Phule Krishi Vidyapeeth, Rahuri: Wheat recommendations 2019-20",
+      "source_url": "https://mpkv.ac.in/Uploads/Research/4.%20Wheat_20200110053545.pdf"
+    }
+  ],
+  "split_note": "All phosphorus and potassium go on at sowing or planting. Nitrogen is divided into the number of parts you choose; the first part goes on with the basal dose. Timing of the later parts depends on the crop, so follow your crop's package of practice.",
+  "general_sources": [
+    {
+      "title": "FAO: Fertilizer use by crop, nutrient management guidelines for some major field crops",
+      "url": "https://www.fao.org/4/a0443e/a0443e04.pdf",
+      "used_for": "General practice that nitrogen can be split between a basal dose and top-dressing, and DAP's nutrient content."
+    }
+  ]
+}

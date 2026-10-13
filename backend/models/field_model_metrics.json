@@ -1,0 +1,61 @@
+{
+  "data": {
+    "plantdoc_train_photos": 2059,
+    "plantdoc_val_photos": 281,
+    "plantdoc_test_photos": 236,
+    "plantvillage_train_photos": 1520,
+    "background_train_photos": 40,
+    "background_test_photos": 19,
+    "synthetic_backgrounds": 150
+  },
+  "epochs_run": 8,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 4.498347282409668,
+      "val_accuracy": 0.4626334519572954
+    },
+    {
+      "epoch": 2,
+      "train_loss": 3.367781162261963,
+      "val_accuracy": 0.5658362989323843
+    },
+    {
+      "epoch": 3,
+      "train_loss": 2.8501574993133545,
+      "val_accuracy": 0.5800711743772242
+    },
+    {
+      "epoch": 4,
+      "train_loss": 2.5069327354431152,
+      "val_accuracy": 0.5516014234875445
+    },
+    {
+      "epoch": 5,
+      "train_loss": 2.2128241062164307,
+      "val_accuracy": 0.594306049822064
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.9801584482192993,
+      "val_accuracy": 0.5871886120996441
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.826640248298645,
+      "val_accuracy": 0.5693950177935944
+    },
+    {
+      "epoch": 8,
+      "train_loss": 1.7248759269714355,
+      "val_accuracy": 0.5871886120996441
+    }
+  ],
+  "temperature": 0.9500000000000004,
+  "plantdoc_test": {
+    "accuracy": 0.5550847457627118,
+    "ece_before": 0.07223223708570004,
+    "ece_after": 0.059419965245208504,
+    "n": 236
+  }
+}
